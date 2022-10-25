@@ -1,21 +1,31 @@
-function fetchData(){
-    fetch('https://run.mocky.io/v3/9b184f9d-bf48-4467-9d8f-137ea0eba817')
-    .then(response=>{
-        if (!response.ok){
-            throw Error("Error")
-        }
-        return response.json();
+const email="shantanuchavhan10@gmail.com"
+const password="shantanu"
 
-    }).then(data=>{
-        const html=data.data.map(user=>{
-            return 
-        })
+form.addEventListener('submit',e=>{
+    e.preventDefault();
+    validateInputs
+})
 
-    }).catch(error=>{
-        console.log(error);
-    });
+function getInputValue(){
+    // Selecting the input element and get its value 
+    var inputemail = document.getElementById("email").value;
+    var inputpassword = document.getElementById("password").value;
+    console.log(inputemail)
+    console.log(inputpassword)
+    if (inputemail==email && inputpassword==password){
+        window.location.href = "http://127.0.0.1:5500/home.html";
+        
+    }else if(inputemail!=email){
+        alert("worng email")
+        document.getElementById("email_error").style.display="block";
+        
+
+    }else{
+        alert("wrong pass")
+        document.getElementById("pass_error").style.display="block";
+
+    }
+    
+    // Displaying the value
+    alert(inputVal);
 }
-
-fetchData()
-
- 

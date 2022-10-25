@@ -5,27 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2 id="title">Random list of quarter backs</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>name</th>
-                <th>office</th>
-                <th>position</th>
-                <th>salary</th>
-            </tr>
-            <thead>
-                <tbody id="tablebody"> 
-
-                </tbody>
-            </thead>
+    <div class="container">
+       
+            
+        <div class="split left">
+            <div class="centered">
+                <img src="./imges/image 1.png" alt="" >
+            </div>
+            </div>
+            
+            <div class="split right">
+            <div class="centered">
+                <div id="form">
             
             
-        </thead>
-    </table>
+            
+                    
+                    <h3>Welcome back</h3>
+                    <h1>Login to your account</h1>
+                    <h3>Email</h3>
+                    <input type="email" name="email" id="email">
+                    <div class="email_error"><h4>Please fill up your email or phone</h4></div>
+                    <h3>Password</h3>
+                    <input type="password" name="password" id="password">
+                    <div class="pass_error"><h4>Please enter a correct password?</h4></div>
+                    <div class="checkbox">
+                        <h4><input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label></h2>
+                        <h4><a href="url">Forget Password?</a></h2>
+                    </div>
+                    <button id="button1" onclick="getInputValue();">Join now</button>
+                    <button id="button2">or sign in with google</button>
+                    <div id="registrationlink">
+                        <h3>Dont have an account? <a href="">join free today</a></h3>
+            
+                    </div>
+                    
+                  
     
+    
+        
+                </div>
+                
+            </div>
+            
+    
+        </div>
+    </div>
     <script src="app.js"></script>
+
 </body>
 </html>
